@@ -1,0 +1,85 @@
+body {
+    background-color: #32322d !important;
+}
+
+#archnavbar {
+    background-color: #32322d !important;
+    border-bottom: 5px #ffff9b solid !important;
+}
+
+#content {
+    color: #c8c8b5 !important;
+}
+
+div.box {
+    background-color: #32322d !important;
+    border: 1px solid #ffff9b !important;
+}
+
+a:link {
+    color: #ffffe6 !important;
+}
+
+a:visited {
+    color: #ebebd4 !important;
+}
+
+pre {
+    border: 1px solid #ffff9b !important;
+    background-color: #32322d !important;
+}
+
+dl dt {
+    color: inherit;
+}
+
+#news h3 a {
+    background-color: #c8c8b5 !important;
+    color: #32322d !important;
+}
+
+h3 span.arrow {
+    border-top: 6px solid #c8c8b5 !important;
+}
+
+p code {
+    background-color: #c8c8b5 !important;
+    color: #32322d !important;
+}
+
+.pkgsearch-typeahead li a {
+    color: #32322d !important;
+}
+
+#pkgsearch {
+    border: 1px solid #ffff9b !important;
+    background-color: #32322d !important;
+}
+
+#pkgsearch input {
+    border: 1px solid #ffff9b !important;
+    background-color: #c8c8b5 !important;
+    color: #32322d;
+}
+
+table.results {
+    border-top: 1px solid #ffff9b;
+    border-bottom: 1px solid #ffff9b;
+}
+
+.results th {
+    background-color: #32322d !important;
+    border-left: 1px solid #ffff9b;
+    border-right: 1px solid #ffff9b;
+    border-bottom: 1px solid #ffff9b;
+}
+
+.results tr:nth-child(odd),
+#article-list tr:nth-child(odd) {
+    background-color: #32322d !important;
+}
+
+.results tr:nth-child(even),
+#article-list tr:nth-child(even) {
+    background-color: #191916 !important;
+}
