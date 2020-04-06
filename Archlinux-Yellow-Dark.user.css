@@ -9,10 +9,10 @@
 @updateURL	https://raw.githubusercontent.com/davidlemlerm/Archlinux-Yellow-Dark-CSS/master/Archlinux-Yellow-Dark.user.css
 @licence	MIT
 @preprocessor	default
-@var		color	dark-strong		"Dark Strong"	#191916
+@var		color	dark-strong		"Dark Strong"		#191916
 @var		color 	dark			"Dark"			#32322d
 @var		color 	light			"Light"			#c8c8b5
-@var		color 	light-strong	"Light Strong	#ffffe6
+@var		color 	light-strong		"Light Strong"		#ffffe6
 @var		color 	accent			"Accent"		#ffff9b
 ==/UserStyle== */
 
