@@ -1,122 +1,134 @@
-:root {
-    --dark-strong: #191916;
-    --dark: #32322d;
-    --light: #c8c8b5;
-    --light-strong: #ffffe6;
-    --accent: #ffff9b;
-}
+/* ==UserStyle==
+@name		Arch Linux Yellow Dark
+@namespace	David Lemler
+@version		1.0.0
+@description	Styles the archlinux.org website for the Arch Linux distribution with a dark yellow color scheme.
+@author		David Lemler <dlemler@pm.me>
+@homepageURL	https://github.com/davidlemlerm/Archlinux-Yellow-Dark-CSS
+@supportURL	https://github.com/davidlemlerm/Archlinux-Yellow-Dark-CSS/issues
+@updateURL	https://raw.githubusercontent.com/davidlemlerm/Archlinux-Yellow-Dark-CSS/master/Archlinux-Yellow-Dark.css
+@licence		MIT
+@preprocessor	default
+@var			color	dark-strong	"Dark Strong"	#191916
+@var			color 	dark			"Dark"		#32322d
+@var			color 	light		"Light"		#c8c8b5
+@var			color 	light-strong	"Light Strong	#ffffe6
+@var			color 	accent		"Accent"		#ffff9b
+*/
 
-body {
-    background-color: var(--dark) !important;
-    color: var(--light) !important;
-}
-
-a:link {
-    color: var(--accent) !important;
-}
-
-a:visited {
-    color: var(--light-strong) !important;
-}
-
-input {
-    background-color: inherit !important;
-    border: 1px solid var(--accent) !important;
-    color: var(--light) !important;
-}
-
-label {
-    color: var(--light) !important;
-}
-
-select {
-    background-color: var(--dark) !important;
-    color: var(--light) !important
-}
-
-th {
-    background-color: var(--dark) !important;
-}
-
-tr:nth-child(even) {
-    background-color: var(--dark) !important;
-}
-
-tr:nth-child(odd) {
-    background-color: var(--dark-strong) !important;
-}
-
-table.results {
-    border-top: 1px solid var(--accent) !important;
-    border-bottom: 1px solid var(--accent) !important;
-}
-
-.results th {
-    border-bottom-color: var(--accent) !important;
-    border-left: 1px solid var(--accent) !important;
-    border-right: 1px solid var(--accent) !important;
-}
-
-dt {
-    color: var(--light) !important;
-}
-
-pre {
-    background-color: var(--dark) !important;
-    border-color: var(--accent) !important;
-}
-
-p > code {
-    background-color: inherit !important;
-    border: 1px solid var(--accent) !important;
-}
-
-h3 > a {
-    background-color: inherit !important;
-}
-
-.box {
-    background-color: var(--dark) !important;
-    border: 1px solid var(--accent) !important;
-}
-
-.arrow {
-    border-top: none !important;
-}
-
-.pun .punwrap {
-    background-color: var(--dark-strong) !important;
-    border-color: var(--accent) !important;
-}
-
-#archnavbar {
-    background-color: var(--dark) !important;
-    border-bottom: 1px var(--accent) solid !important;
-}
-
-#pkgsearch {
-    background-color: var(--dark) !important;
-    border: 1px solid var(--accent) !important;
-}
-
-#brdmain {
-    border-top-style: none !important;
-}
-
-#brdmenu > ul > li > a {
-    border: none !important;
-    background-color: transparent !important;
-}
-
-#navindex {
-    padding-left: 10px !important;
-}
-
-#arch-downloads > code {
-    background-color: inherit !important;
-    border: 1px solid var(--accent) !important;
-}
-
-#arch-downloads > br {
-    margin-bottom: 5px !important;
+@-moz-document domain("archlinux.org") {
+	body {
+		background-color: var(--dark) !important;
+		color: var(--light) !important;
+	}
+	
+	a:link {
+		color: var(--accent) !important;
+	}
+	
+	a:visited {
+		color: var(--light-strong) !important;
+	}
+	
+	input {
+		background-color: inherit !important;
+		border: 1px solid var(--accent) !important;
+		color: var(--light) !important;
+	}
+	
+	label {
+		color: var(--light) !important;
+	}
+	
+	select {
+		background-color: var(--dark) !important;
+		color: var(--light) !important
+	}
+	
+	th {
+		background-color: var(--dark) !important;
+	}
+	
+	tr:nth-child(even) {
+		background-color: var(--dark) !important;
+	}
+	
+	tr:nth-child(odd) {
+		background-color: var(--dark-strong) !important;
+	}
+	
+	table.results {
+		border-top: 1px solid var(--accent) !important;
+		border-bottom: 1px solid var(--accent) !important;
+	}
+	
+	.results th {
+		border-bottom-color: var(--accent) !important;
+		border-left: 1px solid var(--accent) !important;
+		border-right: 1px solid var(--accent) !important;
+	}
+	
+	dt {
+		color: var(--light) !important;
+	}
+	
+	pre {
+		background-color: var(--dark) !important;
+		border-color: var(--accent) !important;
+	}
+	
+	p > code {
+		background-color: inherit !important;
+		border: 1px solid var(--accent) !important;
+	}
+	
+	h3 > a {
+		background-color: inherit !important;
+	}
+	
+	.box {
+		background-color: var(--dark) !important;
+		border: 1px solid var(--accent) !important;
+	}
+	
+	.arrow {
+		border-top: none !important;
+	}
+	
+	.pun .punwrap {
+		background-color: var(--dark-strong) !important;
+		border-color: var(--accent) !important;
+	}
+	
+	#archnavbar {
+		background-color: var(--dark) !important;
+		border-bottom: 1px var(--accent) solid !important;
+	}
+	
+	#pkgsearch {
+		background-color: var(--dark) !important;
+		border: 1px solid var(--accent) !important;
+	}
+	
+	#brdmain {
+		border-top-style: none !important;
+	}
+	
+	#brdmenu > ul > li > a {
+		border: none !important;
+		background-color: transparent !important;
+	}
+	
+	#navindex {
+		padding-left: 10px !important;
+	}
+	
+	#arch-downloads > code {
+		background-color: inherit !important;
+		border: 1px solid var(--accent) !important;
+	}
+	
+	#arch-downloads > br {
+		margin-bottom: 5px !important;
+	}
 }
