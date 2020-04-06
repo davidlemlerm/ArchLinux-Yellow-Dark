@@ -53,8 +53,8 @@ table.results {
 
 .results th {
     border-bottom-color: var(--accent) !important;
-    border-left: 1px solid var(--accent);
-    border-right: 1px solid var(--accent);
+    border-left: 1px solid var(--accent) !important;
+    border-right: 1px solid var(--accent) !important;
 }
 
 dt {
@@ -109,7 +109,7 @@ h3 > a {
 }
 
 #navindex {
-    padding-left: 10px;
+    padding-left: 10px !important;
 }
 
 #arch-downloads > code {
@@ -118,5 +118,5 @@ h3 > a {
 }
 
 #arch-downloads > br {
-    margin-bottom: 5px;
+    margin-bottom: 5px !important;
 }
