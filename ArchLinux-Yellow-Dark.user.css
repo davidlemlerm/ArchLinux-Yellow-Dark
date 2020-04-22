@@ -1,184 +1,34 @@
-/* ==UserStyle==
-@name		Arch Linux Yellow Dark
-@namespace	David Lemler
-@version	1.0.1
-@description	Styles the archlinux.org website for the Arch Linux distribution with a dark yellow color scheme.
-@author		David Lemler <dlemler@pm.me>
-@homepageURL	https://github.com/davidlemlerm/ArchLinux-Yellow-Dark
-@supportURL	https://github.com/davidlemlerm/ArchLinux-Yellow-Dark/issues
-@updateURL	https://raw.githubusercontent.com/davidlemlerm/ArchLinux-Yellow-Dark/master/ArchLinux-Yellow-Dark.user.css
-@license	MIT
-@preprocessor	default
-@var		color	dark-strong	"Dark Strong"	#191916
-@var		color 	dark		"Dark"		#32322d
-@var		color 	light		"Light"		#c8c8b5
-@var		color 	light-strong	"Light Strong"	#ffffe6
-@var		color 	accent		"Accent"	#ffff9b
-==/UserStyle== */
+:root {
+    --dark-strong: #191916;
+    --dark: #32322d;
+    --light: #c8c8b5;
+    --light-strong: #ffffe6;
+    --accent: #ffff9b;
+}
 
-@-moz-document domain("archlinux.org") {
-	body {
-		background-color: var(--dark) !important;
-		color: var(--light) !important;
-	}
+body,
+#content,
+#content *,
+#punindex,
+#punindex *,
+.selected,
+#menu,
+#pm-menu,
+.styled-table.full.size * {
+    background-color: var(--dark) !important;
+    border-color: var(--accent) !important;
+    color: var(--light) !important;
+}
 
-	/* Links */
-	a:link {
-		color: var(--accent) !important;
-	}
-	a:visited {
-		color: var(--light-strong) !important;
-	}
-	
-	/* Input */
-	input {
-		background-color: inherit !important;
-		border: 1px solid var(--accent) !important;
-		color: var(--light) !important;
-	}
-	label {
-		color: var(--light) !important;
-	}
-	select {
-		background-color: var(--dark) !important;
-		color: var(--light) !important
-	}
+#content a:not(.new),
+#mw-navigation li:not(.new) a:not(.new),
+#mw-panel li:not(.new) a:not(.new),
+#column-one li:not(.new) a:not(.new),
+#footer a:not(.new),
+a {
+    color: var(--light-strong) !important;
+}
 
-	/* Miscellanious Tags */
-	pre {
-		background-color: var(--dark) !important;
-		border-color: var(--accent) !important;
-	}
-	p > code {
-		background-color: inherit !important;
-		border: 1px solid var(--accent) !important;
-	}
-	h2 {
-		color: var(--light) !important;
-	}
-	h3 > a {
-		background-color: inherit !important;
-	}
-	
-	/* Tables */
-	table.results {
-		border-top: 1px solid var(--accent) !important;
-		border-bottom: 1px solid var(--accent) !important;
-	}
-	.results th {
-		border-bottom-color: var(--accent) !important;
-		border-left: 1px solid var(--accent) !important;
-		border-right: 1px solid var(--accent) !important;
-	}
-	dt {
-		color: var(--light) !important;
-	}
-	td.task_summary > a:link {
-		color: var(--accent) !important;
-	}
-	td.task_summary > a:visited {
-		color: var(--light-strong) !important;
-	}
-	th {
-		background-color: var(--dark) !important;
-	}
-	tr:nth-child(even) {
-		background-color: var(--dark) !important;
-		color: var(--light) !important;
-	}
-	tr:nth-child(odd) {
-		background-color: var(--dark-strong) !important;
-		color: var(--light-strong) !important;
-	}
-	tr > th {
-		color: var(--light) !important;
-	}
-	.severity1:hover:nth-child(even),
-	.severity2:hover:nth-child(even),
-	.severity3:hover:nth-child(even),
-	.severity4:hover:nth-child(even),
-	.severity5:hover:nth-child(even) {
-		background-color: var(--dark) !important;
-	}
-	.severity1:hover:nth-child(odd),
-	.severity2:hover:nth-child(odd),
-	.severity3:hover:nth-child(odd),
-	.severity4:hover:nth-child(odd),
-	.severity5:hover:nth-child(odd) {
-		background-color: var(--dark-strong) !important;
-	}
-
-	/* Classes */
-	.box {
-		background-color: var(--dark) !important;
-		border: 1px solid var(--accent) !important;
-	}
-	.arrow {
-		border-top: none !important;
-	}
-	.inbox {
-		color: var(--light) !important;
-	}
-	.pun {
-		background-color: var(--dark-strong) !important;
-	}
-
-	.pun .punwrap {
-		background-color: var(--dark-strong) !important;
-		border-color: var(--accent) !important;
-	}
-
-	/* ID's */
-	#archnavbar {
-		background-color: var(--dark) !important;
-		border-bottom: 1px var(--accent) solid !important;
-	}
-	#arch-downloads > code {
-		background-color: inherit !important;
-		border: 1px solid var(--accent) !important;
-	}
-	#arch-downloads > br {
-		margin-bottom: 5px !important;
-	}
-	#brdmain {
-		border-top-style: none !important;
-	}
-	#brdmenu {
-		background-color: var(--dark) !important;
-	}
-	#brdmenu > ul > li > a {
-		border: none !important;
-		background-color: transparent !important;
-	}
-	#menu,
-	#pm-menu,
-	#search {
-		background-color: inherit !important;
-	}
-	#navindex {
-		padding-left: 10px !important;
-	}
-	#pkgsearch {
-		background-color: var(--dark) !important;
-		border: 1px solid var(--accent) !important;
-	}
-	#taskdetails,
-	#submenu,
-	#comments,
-	#related,
-	#history {
-		background-color: var(--dark) !important;
-		color: var(--light) !important;
-	}
-	#tasklist {
-		padding: 0 !important;
-		border: 1px solid var(--accent) !important;
-		background-color: var(--dark) !important;
-	}
-	#submenu a {
-		background-color: var(--dark) !important;
-	}
-	#submenu a.active {
-		background-color: var(--dark-strong) !important;
-	}
+#archnavbar {
+    border-bottom-color: var(--accent) !important;
 }
